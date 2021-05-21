@@ -53,4 +53,12 @@ public class ReflexTest {
         JSONObject jsonObject = JSONObject.parseObject(JSONObject.toJSONString(reflexRQVo));
         reflexController.reflexInfo(jsonObject);
     }
+
+    /**
+     * 这是调用ReflexDetail_2Service内的insert方法
+     * */
+    @Test
+    void reflexTest4() {
+
+    }
 }
