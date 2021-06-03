@@ -55,10 +55,22 @@ public class ReflexTest {
     }
 
     /**
-     *
+     * 代码示例1
      * */
     @Test
     void reflexTest5() {
+        ReflexRQVo reflexRQVo = new ReflexRQVo();
+        reflexRQVo.setReflexCode("2");
+        reflexRQVo.setReflexOperation(2);
+        JSONObject jsonObject = JSONObject.parseObject(JSONObject.toJSONString(reflexRQVo));
+        reflexController.reflexInfo(jsonObject);
+    }
+
+    /**
+     * 代码示例2
+     * */
+    @Test
+    void reflexTest6() {
         ReflexRQVo reflexRQVo = new ReflexRQVo();
         reflexRQVo.setReflexCode("2");
         reflexRQVo.setReflexOperation(2);
